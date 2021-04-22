@@ -1,3 +1,18 @@
+// A function that prints an Array of movie Objects
+function printMovies(movies) {
+  // Loop through the movies Array
+  for (let i=0; i < movies.length; i++) {
+    // Store each item in the Array in memory
+    let movie = movies[i]
+
+    // Create a sentence to be written out to the JavaScript console
+    let sentence = `"${movie.quote}" is a quote from ${movie.title}.`
+
+    // Write the sentence to the JavaScript console
+    console.log(sentence)
+  }
+}
+
 let modernMovies = [
   { title: `Star Wars`, quote: `May the Force be with you.` },
   { title: `Titanic`, quote: `I'm the king of the world!` },
@@ -28,18 +43,3 @@ let classicMovies = [
 
 // Print classic movies
 printMovies(classicMovies)
-
-// A function that prints an Array of movie Objects
-function printMovies(movies) {
-  // Loop through the movies Array
-  for (let i=0; i < movies.length; i++) {
-    // Store each item in the Array in memory
-    let movie = movies[i]
-
-    // Create a sentence to be written out to the JavaScript console
-    let sentence = `"${movie.quote}" is a quote from ${movie.title}.`
-
-    // Write the sentence to the JavaScript console
-    console.log(sentence)
-  }
-}
